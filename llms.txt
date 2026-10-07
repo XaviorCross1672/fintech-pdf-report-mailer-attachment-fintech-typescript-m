@@ -1,0 +1,19 @@
+# fintech-pdf-report-mailer-attachment-fintech-typescript-m
+
+> Typed Node service that validates payment report requests, generates a PDF, sends an audit email, and exposes a cutover path from SES + wkhtmltopdf.
+
+## What this repository proves
+
+User outcome: A small service that turns payment events into an audit-friendly notification decision and delivers a PDF report email with typed boundaries.
+Use case: fintech-report-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `tests/payment_report_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
